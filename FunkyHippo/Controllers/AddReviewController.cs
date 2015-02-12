@@ -31,7 +31,7 @@ namespace FunkyHippo.Controllers
                              where c.AlbumID == albumNum
                              select c.Rating).Count();
 
-            var aggRating = sumRating / countUsers;
+            double aggRating = (double)sumRating / (double)countUsers;
             ViewBag.AggRate = aggRating;
 
             return View(reviews.ToList());
@@ -53,7 +53,7 @@ namespace FunkyHippo.Controllers
                               where c.AlbumID == albumNum
                               select c.Rating).Count();
 
-            var aggRating = sumRating / countUsers;
+            double aggRating = (double)sumRating / (double)countUsers;
             ViewBag.AggRate = aggRating;
 
             return View(reviews.ToList());

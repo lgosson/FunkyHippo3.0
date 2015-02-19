@@ -107,3 +107,4 @@ C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\bin\Microsoft.Owin.Secu
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.dll
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.pdb
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.csprojResolveAssemblyReference.cache

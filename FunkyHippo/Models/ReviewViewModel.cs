@@ -7,6 +7,7 @@ namespace FunkyHippo.Models
 {
     public class ReviewViewModel
     {
+        private int ID { get; set; }
         public string Title { get; set; }
         public int Rating { get; set; }
         public string Comment { get; set; }

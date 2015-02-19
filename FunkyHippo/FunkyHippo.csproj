@@ -257,6 +257,7 @@
     <Content Include="Views\AddReview\OurLove.cshtml" />
     <Content Include="Views\AddReview\RTJ2.cshtml" />
     <Content Include="Views\GenresView\Index.cshtml" />
+    <Content Include="Views\AddReview\CreateOurLove.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

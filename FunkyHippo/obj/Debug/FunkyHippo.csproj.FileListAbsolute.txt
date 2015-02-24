@@ -107,4 +107,11 @@ C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\bin\Microsoft.Owin.Secu
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.dll
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.pdb
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.InitialCreate.resources
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.csproj.GenerateResource.Cache
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.MaxLengthOnNames.resources
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.RegExRatingMaxComment.resources
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.MaxLengthOnComment.resources
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.FixCommentRating.resources
+C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.Migrations.FixRegExRating.resources
 C:\Users\logan\Documents\GitHub\FunkyHippo3.0\FunkyHippo\obj\Debug\FunkyHippo.csprojResolveAssemblyReference.cache

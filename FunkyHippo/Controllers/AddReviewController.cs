@@ -11,6 +11,7 @@ namespace FunkyHippo.Controllers
 {
     public class AddReviewController : Controller
     {
+        private FunkyHippoContext db = new FunkyHippoContext();
         
         // GET: AddReview
         public ActionResult Index()
@@ -20,7 +21,7 @@ namespace FunkyHippo.Controllers
 
         public ActionResult OurLove()
         {
-            FunkyHippoContext db = new FunkyHippoContext();
+            
             var albumNum = 1;
             
             var reviews = (from b in db.Reviews
@@ -44,9 +45,9 @@ namespace FunkyHippo.Controllers
         // GET: Reviews/Create
        public ActionResult CreateOurLove()
         {
-            FunkyHippoContext db = new FunkyHippoContext();
+            
             ViewBag.AlbumID = new SelectList(db.Albums, "AlbumID", "Title");
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "SurName");
+            ViewBag.UserID = new SelectList(db.Users, "UserID", "UserName");
             return View();
         }
 
@@ -57,7 +58,7 @@ namespace FunkyHippo.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,UserID,AlbumID,Rating,Comment")] Review review)
         {
-           FunkyHippoContext db = new FunkyHippoContext();
+          
             if (ModelState.IsValid)
             {
                 db.Reviews.Add(review);
@@ -75,7 +76,7 @@ namespace FunkyHippo.Controllers
         public ActionResult RTJ2()
         {
             var albumNum = 2;
-            FunkyHippoContext db = new FunkyHippoContext();
+            
             var reviews = (from b in db.Reviews
                            where b.AlbumID == albumNum
                            select b);

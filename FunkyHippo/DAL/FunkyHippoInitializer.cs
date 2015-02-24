@@ -5,10 +5,11 @@ using System.Web;
 using FunkyHippo.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Migrations;
 
 namespace FunkyHippo.DAL
 {
-    public class FunkyHippoInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<FunkyHippoContext>
+    public class FunkyHippoInitializer : System.Data.Entity.DropCreateDatabaseAlways<FunkyHippoContext>
     {
         protected override void Seed(FunkyHippoContext context)
         {
@@ -20,7 +21,7 @@ namespace FunkyHippo.DAL
                 new User{UserName="Satchmo", FirstName="Joe", SurName="Fudgel"}
             };
 
-            users.ForEach(s => context.Users.Add(s));
+            users.ForEach(s => context.Users.AddOrUpdate(s));
             context.SaveChanges();
 
             var albums = new List<Album>
@@ -30,7 +31,7 @@ namespace FunkyHippo.DAL
                 new Album{Title="Immunity", Artist="John Hopkins", Release=2013, Genre="Electronic"}
             };
 
-            albums.ForEach(s => context.Albums.Add(s));
+            albums.ForEach(s => context.Albums.AddOrUpdate(s));
             context.SaveChanges();
 
             var reviews = new List<Review>
@@ -49,7 +50,7 @@ namespace FunkyHippo.DAL
                 new Review{UserID=4, AlbumID=3, Rating=7, Comment="Weird but oddly satisfying"}
             };
 
-            reviews.ForEach(s => context.Reviews.Add(s));
+            reviews.ForEach(s => context.Reviews.AddOrUpdate(s));
             context.SaveChanges();
         }
     }

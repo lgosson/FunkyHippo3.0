@@ -173,6 +173,31 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502211847331_InitialCreate.cs" />
+    <Compile Include="Migrations\201502211847331_InitialCreate.Designer.cs">
+      <DependentUpon>201502211847331_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502212218180_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201502212218180_MaxLengthOnNames.Designer.cs">
+      <DependentUpon>201502212218180_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502212227091_RegExRatingMaxComment.cs" />
+    <Compile Include="Migrations\201502212227091_RegExRatingMaxComment.Designer.cs">
+      <DependentUpon>201502212227091_RegExRatingMaxComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502212229341_MaxLengthOnComment.cs" />
+    <Compile Include="Migrations\201502212229341_MaxLengthOnComment.Designer.cs">
+      <DependentUpon>201502212229341_MaxLengthOnComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502212233027_FixCommentRating.cs" />
+    <Compile Include="Migrations\201502212233027_FixCommentRating.Designer.cs">
+      <DependentUpon>201502212233027_FixCommentRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502212239187_FixRegExRating.cs" />
+    <Compile Include="Migrations\201502212239187_FixRegExRating.Designer.cs">
+      <DependentUpon>201502212239187_FixRegExRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -192,6 +217,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\FunkyHippo - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\FunkyHippo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -268,6 +295,26 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502211847331_InitialCreate.resx">
+      <DependentUpon>201502211847331_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502212218180_MaxLengthOnNames.resx">
+      <DependentUpon>201502212218180_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502212227091_RegExRatingMaxComment.resx">
+      <DependentUpon>201502212227091_RegExRatingMaxComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502212229341_MaxLengthOnComment.resx">
+      <DependentUpon>201502212229341_MaxLengthOnComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502212233027_FixCommentRating.resx">
+      <DependentUpon>201502212233027_FixCommentRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502212239187_FixRegExRating.resx">
+      <DependentUpon>201502212239187_FixRegExRating.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
